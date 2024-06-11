@@ -1,0 +1,120 @@
+
+@import url('~/assets/scss/_fonts.scss');
+@import url('~/assets/scss/_vechicles.scss');
+@import url('~/assets/scss/_car-card.scss');
+
+* {
+    font-family: 'DMSans';
+}
+
+body {
+    margin: 0;
+}
+
+.layout {
+    display: flex;
+}
+
+.side-bar {
+    background: #282828;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 256px;
+    flex-shrink: 0;
+    &__logo {
+        color: white;
+        font-size: 24px;
+        padding-top: 27px;
+    }
+    
+    &__nav {
+        margin-top: 103px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        color: #FFFFFF73;
+        gap: 13px;
+    }
+    &__link {
+        padding: 18px 32px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        cursor: pointer;
+        &--active {
+            background: #FFFFFF33;
+            color: white;
+        }
+    }
+}
+
+
+html {
+    padding: 0;
+    margin: 0;
+}
+.main-section {    
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 30px;
+        border-bottom: 1px solid #E4E4E4;
+    }
+
+    &__content {
+        max-width: calc(100vw - 256px);
+        padding: 32px;
+        height: calc(100vh - 112px);
+        overflow-y: scroll;
+    }
+
+    &__title {
+        color: #293148;
+        font-size: 31px;
+        margin: 25px 0;
+    }
+
+    &__right-column {
+        display: flex;
+        align-items: center;
+        gap: 23px;
+    }
+
+    &__count {
+        background: #F3F6F8;
+        padding: 8px 16px;
+        border-radius: 6px;
+    }
+    &__left-column {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    &__language {
+        display: flex;
+        align-items: center;
+    }
+
+    &__language-select {
+        border: none;
+        box-shadow: none;
+    }
+
+    &__profile {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    &__add {
+        background: none;
+        border: #E86E84 1px solid;
+        padding: 8px 10px;
+        border-radius: 6px;
+    }
+}
+
+
